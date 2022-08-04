@@ -13,16 +13,17 @@
 
 <body>
     <div class="Wrap">
-        <header class="header">
+        <!-- Header -->
+        <header id="header" class="brand">
             <div class="header_inner">
                 <h1>
                     <a href=""><img src="./img/logo1.png" alt="" /></a>
                 </h1>
-                <!-- <nav class="gnb">
+                <nav class="gnb">
                     <ul>
                         <li>
                             <a href="">BRAND</a>
-                            <ul class="smenu">
+                            <ul>
                                 <li><a href="">대표인사말</a></li>
                                 <li><a href="">죠스이야기</a></li>
                                 <li><a href="">채용정보</a></li>
@@ -30,7 +31,7 @@
                         </li>
                         <li>
                             <a href="">MENU</a>
-                            <ul class="smenu">
+                            <ul>
                                 <li><a href="">메인메뉴</a></li>
                                 <li><a href="">세트메뉴</a></li>
                                 <li><a href="">사이드메뉴</a></li>
@@ -38,14 +39,14 @@
                         </li>
                         <li>
                             <a href="">STORE</a>
-                            <ul class="smenu">
+                            <ul>
                                 <li><a href="">매장 찾기</a></li>
                                 <li><a href="">매장 안내</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="">COMMUNITY</a>
-                            <ul class="smenu">
+                            <ul>
                                 <li><a href="">커뮤니티</a></li>
                                 <li><a href="">고객의 소리</a></li>
                             </ul>
@@ -66,24 +67,26 @@
                         </p>
                     </div>
                 </div>
-            </div> -->
             </div>
         </header>
+
+        <!-- Main-->
         <main class="mian">
             <section class="main_visual">
                 <div class="main_slides">
                     <figure>
-                        <img src="./img/mainVisual01.jpg" alt="">
+                        <img src="./img/mainVisual02.jpg" alt="">
                     </figure>
                     <figure>
                         <img src="./img/mainVisual03.jpg" alt="">
                     </figure>
                 </div>
             </section>
-            <section class="main_intro">
+            <!-- Main 인트로 -->
+            <section class="intro">
                 <div class="intro_inner">
                     <div class="left">
-                        <!-- <h2>
+                        <h2>
                             <i class="xi-close">NEW STORE</i>
                         </h2>
                         <p class="tit">
@@ -97,10 +100,10 @@
                         </p>
                         <div class="util">
                             <a href="/">죠스떡볶이 새 매장 보러가기</a>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="right">
-                        <!-- <h2>
+                        <h2>
                             <i class="xi-close">STORE SEARCH</i>
                         </h2>
                         <p class="tit">
@@ -111,22 +114,115 @@
                                 어디있지!?
                             </em>
                         </p>
-                        <div class="util">
-                            인풋,버튼태그
+                        <div id="searchForm">
+                            <form action="javascript:searchAction()">
+                                <input type="text" placeholder="가까운 지역명을 검색하세요.">
+                                <a><i class="xi-search"></i></a>
+                            </form>
+                            <script>
+                                function searchAction() {
+                                    var searchValue = $('#searchForm input').val();
+                                    if (searchValue.length < 5) {
+                                        alert('더 입력해');
+                                    }
+                                    else {
+                                        alert(searchValue)
+                                    }
+                                    $('#searchForm input').val('');
+                                    $('#searchForm input').focus();
+                                }
+                            </script>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </section>
-            <section class="main_menu">
+            <!-- Main 메뉴 -->
+            <section class="menu">
                 <div class="menu_inner">
-
+                    <h2>
+                        <i class="xi-restaurant">JAWS MENU</i>
+                    </h2>
+                    <p class="tit">
+                        <em>
+                            오늘 죠스에서
+                            <br />
+                            뭐 먹을까?
+                        </em>
+                    </p>
+                    <div class="util">
+                        <a href="/">죠스떡볶이 전체메뉴 보러가기</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Main 쿠폰 -->
+            <section class="coupon">
+                <div class="coupon_inner">
+                    <figure>
+                        <a href=""><img src="./img/img_mobile.png" alt=""></a>
+                    </figure>
+                    <h2>
+                        <i class="xi-gift-o">JAWS MOBILE COUPON</i>
+                    </h2>
+                    <p class="tit">
+                        배달도 되고,<br />
+                        선물도 됩니다!<br />
+                        <em>
+                            죠스떡볶이
+                        </em>
+                    </p>
+                </div>
+            </section>
+            <!-- Main SNS -->
+            <section class="sns">
+                <div class="sns_inner">
+                    <h2>
+                        <i class="xi-comment-o">JAWS COMMUNITY</i>
+                    </h2>
+                    <p class="tit">
+                        죠스는 항상
+                        <em>
+                            즐겁습니다.
+                        </em>
+                    </p>
+                </div>
+                <div class="sns_slides">
+                    <div class="s_d">
+                        <a href="">
+                            <p><i class="xi-facebook">FACEBOOK</i></p>
+                            <div class="sns_txt">죠스떡볶이 ‘14주년감사이벤트’</div>
+                            <figure>
+                                <img src="./img/sns01.png" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="s_d">
+                        <a href="">
+                            <p><i class="xi-facebook">FACEBOOK</i></p>
+                            <div class="sns_txt">죠스떡볶이 ‘14주년감사이벤트’</div>
+                            <figure>
+                                <img src="./img/sns02.jpg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="s_d">
+                        <a href="">
+                            <p><i class="xi-facebook">FACEBOOK</i></p>
+                            <div class="sns_txt">죠스떡볶이 ‘14주년감사이벤트’</div>
+                            <figure>
+                                <img src="./img/sns03.png" alt="">
+                            </figure>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
+
+        <!-- Footer -->
         <footer class="footer">
 
         </footer>
     </div>
+
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./js/jaws.js"></script>
