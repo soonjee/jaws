@@ -81,52 +81,60 @@
             <section class="intro">
                 <div class="intro_inner">
                     <div class="left">
-                        <h2>
-                            <i class="xi-users-o">NEW STORE</i>
-                        </h2>
-                        <p class="tit">
-                            죠스떡볶이
-                            <br />
-                            <em>
-                                새 매장을
+                        <div class="txt">
+                            <h2>
+                                <i class="xi-users-o"></i>
+                                NEW STORE
+                            </h2>
+                            <p class="tit">
+                                죠스떡볶이
                                 <br />
-                                소개합니다.
-                            </em>
-                        </p>
-                        <div class="util">
-                            <a href="">죠스떡볶이 새 매장 보러가기<i class="xi-play"></i></a>
+                                <em>
+                                    새 매장을
+                                    <br />
+                                    소개합니다.
+                                </em>
+                            </p>
+                            <div class="util">
+                                <a href="">
+                                    죠스떡볶이 새 매장 보러가기
+                                    <i class="xi-play"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="right">
-                        <h2>
-                            <i class="xi-shop">STORE SEARCH</i>
-                        </h2>
-                        <p class="tit">
-                            죠스떡볶이
-                            <em>
-                                매장,
-                                <br />
-                                어디있지!?
-                            </em>
-                        </p>
-                        <div id="searchForm">
-                            <form action="javascript:searchAction()">
-                                <input type="text" placeholder="가까운 지역명을 검색하세요.">
-                                <a><i class="xi-search"></i></a>
-                            </form>
-                            <script>
-                                function searchAction() {
-                                    var searchValue = $('#searchForm input').val();
-                                    if (searchValue.length < 5) {
-                                        alert('더 입력해');
+                        <div class="txt">
+                            <h2>
+                                <i class="xi-shop"></i>
+                                STORE SEARCH
+                            </h2>
+                            <p class="tit">
+                                죠스떡볶이<br />
+                                <em>
+                                    매장,<br />
+                                    어디있지!?
+                                </em>
+                            </p>
+                            <div id="searchForm">
+                                <form action="javascript:searchAction()">
+                                    <input type="text" placeholder="가까운 지역명을 검색하세요.">
+                                    <a><i class="xi-search"></i></a>
+                                </form>
+                                <script>
+                                    function searchAction() {
+                                        var searchValue = $('#searchForm input').val();
+                                        if (searchValue.length < 5) {
+                                            alert('더 입력하세요.');
+                                        }
+                                        else {
+                                            alert(searchValue)
+                                        }
+                                        $('#searchForm input').val('');
+                                        $('#searchForm input').focus();
                                     }
-                                    else {
-                                        alert(searchValue)
-                                    }
-                                    $('#searchForm input').val('');
-                                    $('#searchForm input').focus();
-                                }
-                            </script>
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
