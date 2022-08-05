@@ -301,9 +301,9 @@
 }
 
 .sns_txt {
+    height: 45px;
     font-size: 19px;
     font-weight: 600;
-    line-height: 25px;
     margin-bottom: 50px;
 }
 

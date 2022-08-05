@@ -1,6 +1,6 @@
 $(function () {
     $('.sns_slides').slick({
-        autoplay: true,
+        // autoplay: true,
         arrows: false,
         speed: 1000,
         dots: false,
