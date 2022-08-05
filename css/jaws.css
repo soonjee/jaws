@@ -274,18 +274,68 @@
 }
 
 .sns .sns_slides {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
+
+}
+.sns_slides .s_d {
+    height: 382px;
+    padding: 25px;
+    background-color: #fff;
+    margin: 0 30px 0 0;
 }
 
+.sns_slides .s_d:hover {
+    background-color: #B42D41;
+    color: #fff;
+    transform: all 1s;
+}
 
+.sns_slides img {
+    width: 200px;
+    height: 200px;
+}
 
+.sns_slides .s_info p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.sns_txt {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
 
 
 /* 푸터 */
 .footer {
-    padding: 120px 0;
+    padding: 50px 0;
     background-color: #333;
+    color: #fff;
 }
+
+.footer .right_infobox {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .right_infobox dl {
+    width: 40%;
+  }
+  
+  .right_infobox dt {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .right_infobox dd {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 30px;
+    color:rgb(255, 255, 255);
+  }
 
